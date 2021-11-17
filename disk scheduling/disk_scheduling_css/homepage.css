@@ -1,0 +1,118 @@
+body{
+    background: hsl(0, 0%, 0%);
+    color: white;
+    box-sizing: border-box;
+}
+.body-container a{
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+.big-circle{
+    z-index: 100;
+    position: fixed;
+    top: -20px;
+    left:40px;
+    display: none;
+}
+.big-circle img{
+    border-radius: 400px;
+    box-sizing: border-box;
+    position: relative;
+}
+.big-circle h1{
+    position: absolute;
+    top:95px;
+    left:450px;
+    font-size: 36px;
+}
+.big-circle .big-circle-content{
+    /* border: 2px solid white; */
+    position: absolute;
+    top:200px;
+    padding: 0px 200px;
+    font-size: 22px;
+    line-height: 1.5em;
+    left:50px;
+    opacity: 0;
+}
+.big-circle .run-algo{
+    position: fixed;
+    bottom: -30px;
+    right: -10px;
+    z-index: 200;
+    display: none;
+    padding: 10px 20px;
+
+}
+.big-circle .run-algo h4{
+    position: fixed;
+    font-size: 24px;
+    bottom: 40px;
+    right: 55px;
+    z-index: 250;
+    opacity: 0;
+}
+.body-container a:hover{
+    cursor: pointer;
+}
+.alogrithm-bubbles{
+    margin: 50px auto;
+    /* border:5px solid gray; */
+}
+.c1{
+    position: absolute;
+    left: 90px;
+    top: 100px;
+}
+.c2{
+    position: absolute;
+    left:80px; 
+    top:350px;
+}
+.c4{
+    position: absolute;
+    top:0px;
+    left: 70px;
+}
+.c5{
+    position: absolute;
+    top:30px;
+    left: 350px;
+}
+.c6{
+    position: absolute;
+    left: -100px;
+    top:220px;
+}
+.c7{
+    position: absolute;
+    left: 70px;
+    top:350px;
+}
+.circle{
+    box-sizing: border-box;
+    height: 220px;
+    width: 220px;
+    /* border: white 5px solid; */
+    border-radius: 220px;
+    position: relative;
+    display: inline-block;
+    /* overflow: hidden; */
+}
+.circle img{
+    border-radius: 125px;
+    position: absolute;
+    top:0;
+    left: 0;
+    z-index: 2;
+}
+.circle img:hover{
+    cursor: pointer;
+}
+.circle h1{
+    position: absolute;
+    z-index: 10;
+    top:55px;
+    left:55px;
+}

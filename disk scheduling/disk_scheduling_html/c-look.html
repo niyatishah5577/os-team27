@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.6.0/dist/chart.min.js"></script>
+    <link rel="stylesheet" href="../disk_scheduling_css/algo.css">
+    <!-- <script src="fcfc.js"></script> -->
+</head>
+
+<body>
+    <!-- <img src="Abstract_digital_wave_of_particles_background.jpg" alt=""> -->
+    <div class="btn-container">
+        <div class="btn-algo addnew">Add new row</div>
+        <div class="btn-algo delrow">Delete row</div>
+        <div class="btn-algo sub">submit</div>
+    </div>
+    <div class="container">
+        <input type="text" class="headval" placeholder="enter head value">
+        <input type="text" class="disksize" placeholder="enter disc size">
+        <input type="text" class="dir" placeholder="enter direction">
+        <!-- <input type="text" class="dir" placeholder="enter direction"> -->
+        <!-- <div class="ip-container">
+            <form>
+                <input type="text" class="mainval0" placeholder="Enter new disc position">
+                <input type="text" class="row rowno0" placeholder="this is row no">
+            </form>
+        </div> -->
+    </div>
+    <div class="output btn-algo">
+        <p>
+            Output
+        </p>
+    </div>
+    <script src="../disk_scheduling_js/c-look.js"></script>
+    <script>
+        // var row = 0;
+        // $('.addnew').click(function () {
+        //     row = row + 1;
+        //     $('.container').append(' <div class="ip-container"><form><input type="text" class="discval" placeholder="Enter new disc position"> <input type="text" class="row" placeholder="this is row no"></form></div>')
+        //     $('.container .ip-container:last').addClass("rowno" + row)
+        //     $('.container .ip-container:last input:first').addClass("mainval" + row)
+        //     $('.container .row:last').val(row)
+        //     $('.container .rowno0').val(0)
+        // })
+        // $('.delrow').click(function () {
+        //     $('.container .ip-container:last').remove();
+        //     row = row - 1;
+        //     if (row < 0) {
+        //         row = 0;
+        //     }
+        // })
+        // $('.sub').click(function () {
+        //     var arr = [];
+        //     for (var i = 1; i <= row; i++) {
+        //         var isValid;
+        //         $("input").each(function () {
+        //             var element = $(this);
+        //             if (element.val() == "") {
+        //                 isValid = false;
+        //             }
+        //         });
+        //         if (isValid == false) {
+        //             alert('missing values')
+        //             break;
+        //         }
+        //         else {
+        //             console.log(row)
+        //             for (var n = 1; n <= row; n++) {
+        //                 arr[n - 1] = $('.mainval' + n).val()
+        //             }
+        //         }
+
+
+        //     }
+        //     console.log(arr)
+        //     var head = $('.headval').val();
+        //     var disk_size = $('.disksize').val();
+        //     // var dir = $('.dir').val();
+        //     if (head == "") {
+
+        //         alert('enter head')
+        //     }
+        //     else {
+        //         var seektime = 0
+        //         var diff_arr = []
+        //         console.log(arr, head, seektime)
+        //         function calc_seektime(arr, head, seektime) {
+        //             var moment_to_right = 0;
+        //             var moment_to_left = 0
+        //             var in_between=0
+        //             var less_arr=[]
+        //             var more_arr=[]
+        //             for(i=0;i<=arr.length;i++){
+        //                 if(arr[i]<head){
+        //                     less_arr.push(arr[i])
+        //                 }
+        //                 console.log(less_arr)
+        //             }
+        //             for(i=0;i<=arr.length;i++){
+        //                 if(arr[i]>head){
+        //                     more_arr.push(arr[i])
+        //                 }
+        //                 console.log(less_arr)
+        //             }
+
+        //             if (dir == "right") {
+        //                 var max_of_arr = Math.max(...arr)
+        //                 var min_of_arr = Math.min(...arr)
+
+        //                 moment_to_right=max_of_arr-head
+        //                 in_between=max_of_arr - min_of_arr
+        //                 moment_to_left= Math.max(...less_arr) - min_of_arr
+        //             }
+        //             if (dir == "left") {
+        //                 var max_of_arr = Math.max(...arr)
+        //                 var min_of_arr = Math.min(...arr)
+        //                 moment_to_left=head - min_of_arr
+        //                 in_between=max_of_arr - min_of_arr
+        //                 moment_to_right=max_of_arr - Math.min(...more_arr)
+
+        //             }
+        //             seektime = moment_to_left + moment_to_right
+                   
+        //             $('.output p').empty()
+        //             $('.output p').html(seektime)
+        //         }
+        //         calc_seektime(arr, head, seektime);
+        //     }
+        // }
+        // )
+    </script>
+</body>
+
+</html>
